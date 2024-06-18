@@ -6,7 +6,7 @@
 
 #main{
 
-/* Header */
+
 }
 .text-white{
     color: #fff;
@@ -18,6 +18,35 @@
     width: 255.984px;
     height: 191.984px;
 }
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col{
+    padding: 0 8px;
+    float: left;
+}
+.col-half{
+    width: 50%;
+}
+.col-third{
+    width: calc(100%/3);
+}
+.col-full{
+    width: 100%;
+}
+.mt-8{
+    margin-top: 8px;
+}
+.mt-16{
+    margin-top: 16px;
+}
+/* Header */
 #header{
     position: fixed;
     top: 0;
@@ -238,6 +267,44 @@
     background-color: #eb9749;
     color: #333;
 }
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Contact */
+
+.contact-section{
+
+}
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.4;
+}
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+.contact-form .form-control{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.contact-form .form-submit-btn{
+    float: right;
+    padding: 10px 22px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #ccc;
+}
+
 #footer{
 
 }
