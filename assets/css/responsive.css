@@ -57,4 +57,7 @@
     #content .school-img{
         width: 60%;
     }
+    #content .tour-section .place-buy-btn{
+        padding: 13px 16px;
+    }
 }
