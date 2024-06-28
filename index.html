@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Chú Bé Lượng</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -13,23 +14,28 @@
             <!-- Begin nav -->
             <ul id="nav">
                 <li><a href="#">Giới Thiệu</a></li>
-                <li><a href="#">Học Vấn</a></li>
-                <li><a href="#">Công Việc</a></li>
+                <li><a href="#HocVan">Học Vấn</a></li>
                 <li>
-                    <a href="#">
+                    <a href="#SoThich">
                         Sở Thích
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
                         <li><a href="#chuyendicungem">Những chuyến đi cùng em</a></li>
-                        <li><a href="#">Siêu xe</a></li>
-                        <li><a href="#">Vlog</a></li>
-                        <li><a href="#">Du lịch</a></li>
+                        <li><a href="#SieuXe">Siêu xe</a></li>
+                        <li><a href="#Vlog">Vlog</a></li>
+                        <li><a href="#DuLich">Du lịch</a></li>
                     </ul>
                 </li>
+                <li><a href="#LienHe">Liên Hệ</a></li>
             </ul>
             <!-- End nav -->
-            <!-- Start Search BTN -->
+            <!--Menu BTN -->
+            <div id="mobile-menu" class="menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+
+            <!--Search BTN -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
             </div>
@@ -43,7 +49,7 @@
         </div>
 
         <div id="content">
-            <div class="content-section">
+            <div id="HocVan" class="content-section">
                 <h2 class="section-heading">học vấn</h2>
                 <p class="section-sub-heading">Mỗi ngày đều phải học được một điều gì đó</p>
                 <p class="about-text">
@@ -54,24 +60,27 @@
                     một ước mơ là được làm ở một công ty lớn mạnh với mức thu nhập trên 1000$.
                 </p>
                 <div class="school-list">
-                    <div class="school-item">
+                    <div class="school-item s-col-full mt-16">
                         <p class="school-name">TH Nguyễn Chí Thanh</p>
                         <img src="./assets/img/content/primary_school.jpg" alt="Trường cấp 1" class="school-img area-img">
                     </div>
-                    <div class="school-item">
+                    <div class="school-item s-col-full mt-16">
                         <p class="school-name">THCS Long Bình</p>
-                        <img src="./assets/img/content/Secondary_school.jpg" alt="Trường cấp 1" class="school-img area-img">
+                        <img src="./assets/img/content/Secondary_school.jpg" alt="Trường cấp 2" class="school-img area-img">
                     </div>
-                    <div class="school-item">
+                    <div class="school-item s-col-full mt-16">
                         <p class="school-name">THPT Nguyễn Hữu Cảnh</p>
-                        <img src="./assets/img/content/high_school.jpg" alt="Trường cấp 1" class="school-img area-img">
+                        <img src="./assets/img/content/high_school.jpg" alt="Trường cấp 3" class="school-img area-img">
+                    </div>
+                    <div class="school-item s-col-full mt-16">
+                        <p class="school-name">Đại Học Công Nghiệp TP.HCM</p>
+                        <img src="./assets/img/content/iuh.jpg" alt="Trường đại học" class="school-img area-img">
                     </div>
                     <div class="clear"></div> <!--clear: Bao phủ gom lại vào 1 vùng -->
                 </div>
             </div>
-            <div class="tour-section">
+            <div id="chuyendicungem" class="tour-section">
                 <div class="content-section">
-                    <a href="#" name="chuyendicungem"></a>
                     <h2 class="section-heading text-white">Hành trình 2024</h2>
                     <p class="section-sub-heading text-white">Tuổi trẻ là những chuyến đi</p>
                     <!-- tour -->
@@ -83,31 +92,31 @@
                     <!-- End Tour -->
                     <!-- place -->
                      <div class="place-list">
-                        <div class="place-item">
+                        <div class="place-item s-col-full mt-16">
                             <img src="./assets/img/tour/Vũng Tàu.jpg" alt="Vũng Tàu" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Vũng Tàu</h3>
                                 <p class="place-time">Wed 29 May 2024</p>
                                 <p class="place-desc">Vào 1 ngày đẹp trời thi xong, đi xa 1 chuyến để ngắm biển, thư giãn.</p>
-                                <a href="./assets/video_vungtau.html" class="place-buy-btn">Xem chi tiết</a>
+                                <a href="./assets/video_vungtau.html" class="place-buy-btn">Xem video</a>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="place-item s-col-full mt-16">
                             <img src="./assets/img/tour/Chốn riêng.jpg" alt="Chốn riêng coffe" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Chốn riêng Coffee</h3>
                                 <p class="place-time">Fri 31 May 2024</p>
                                 <p class="place-desc">Vượt 35km mưa to gió lớn để gặp em, hẹn hò cùng em...</p>
-                                <a href="./assets/video_chonrieng.html" class="place-buy-btn">Xem chi tiết</a>
+                                <a href="./assets/video_chonrieng.html" class="place-buy-btn">Xem video</a>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="place-item s-col-full mt-16">
                             <img src="./assets/img/tour/Tây Ninh.jpg" alt="Tây Ninh" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Tây Ninh</h3>
                                 <p class="place-time">Mon 10 Jun 2024</p>
                                 <p class="place-desc">Sau 10 ngày nghỉ hè, nhớ người yêu quá nên bí mật đi thăm em ấy.</p>
-                                <a href="./assets/video_tayninh.html" class="place-buy-btn">Xem chi tiết</a>
+                                <a href="./assets/video_tayninh.html" class="place-buy-btn">Xem video</a>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -116,25 +125,25 @@
                 </div>
             </div>
             <!-- Contact -->
-            <div class="content-section">
+            <div id="LienHe" class="content-section">
                 <div class="contact-section">
                     <h2 class="section-heading">Liên hệ</h2>
-                    <p class="section-sub-heading">Hãy gọi cho Tiến Lượng để thiết kế trang web</p>
+                    <p class="section-sub-heading">Hãy gọi cho Tiến Lượng để có trang web giống như này :VV</p>
                 </div>
                 <div class="row contact-content">
-                    <div class="col col-half contact-info">
+                    <div class="col col-half contact-info s-col-full">
                         <p><i class="ti-location-pin"></i>Biên Hoà - Đồng Nai</p>
                         <p><i class="ti-mobile"></i>Phone: 0379.499.255</p>
                         <p><i class="ti-email"></i>Email: dotienluong1402@gmail.com</p>
                     </div>
-                    <div class="col col-half contact-form">
+                    <div class="col col-half contact-form s-col-full">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full s-mt-8">
                                     <input type="text" name="" id="" placeholder="Họ tên" required="" class="form-control">
                                 </div>
-                                <div class="col col-half">
-                                    <input type="email" name="" id="" placeholder="Họ tên" required="" class="form-control">
+                                <div class="col col-half s-col-full s-mt-8">
+                                    <input type="email" name="" id="" placeholder="Email" required="" class="form-control">
                                 </div>
                             </div>
                             <div class="row mt-8">
@@ -142,15 +151,28 @@
                                     <input type="text" name="" id="" placeholder="Tin nhắn" required="" class="form-control">
                                 </div>
                             </div>
-                            <input type="submit" class="form-submit-btn mt-16" value="Gửi">
+                            <input type="submit" class="form-submit-btn mt-16 s-full-width" value="Gửi">
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- End Contact Section -->
 
+
+
+        <!-- Begin Map -->
+        <div class="map-section">
+            <img src="./assets/img/map/bear.jpg" alt="Map">
+        </div>
+        <!-- End Map -->
         <div id="footer">
-
+            <div class="social-list">
+                <a href="https://www.facebook.com/luongxmen1402"><i class="ti-facebook"></i></a>
+                <a href="https://www.instagram.com/dotieluog.1402/"><i class="ti-instagram"></i></a>
+                <a href="https://www.youtube.com/@chubeluong1402"><i class="ti-youtube"></i></a>
+            </div>
+            <p class="copyright">Sản phẩm website của <a href="#">Đỗ Tiến Lượng</a></p>
         </div>
 
         <!-- <div class="modal">
@@ -158,5 +180,40 @@
         </div> -->
 
     </div>
+    <script>
+        // Đóng mở menu
+        var header = document.getElementById('header');
+        // console.log(header);
+        var mobileMenu = document.getElementById('mobile-menu');
+        // console.log(mobileMenu);
+        var headerHeight = header.clientHeight;
+        // console.log(headerHeight);
+        mobileMenu.onclick = function(){
+            // alert("Thông báo");
+            var isClose = header.clientHeight === headerHeight;
+            if(isClose){
+                header.style.height = 'auto';
+            }else{
+                header.style.height = null;
+            }
+        }
+
+        // Tự động đóng khi click thẻ a
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        // console.log(menuItems)
+        for(var i = 0; i < menuItems.length; i++){
+            var menuItem = menuItems[i];
+            // console.log(menuItem)
+            menuItem.onclick = function(event){
+                // console.log(this)
+                var isParenMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if(isParenMenu){
+                    event.preventDefault();
+                }else{
+                    header.style.height = null;
+                }
+            }
+        }
+    </script>
 </body>
 </html>

@@ -8,6 +8,9 @@
 
 
 }
+html{
+    scroll-behavior: smooth;
+}
 .text-white{
     color: #fff;
 }
@@ -52,10 +55,12 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 46.5px;
+    height: 46px;
     background-color: #000;
-    height: 46.5px;
     z-index: 1;
+
+    /* Ẩn hover thẻ .subnav */
+    /* overflow: hidden; */
 }
 #nav{
     display: inline-block;
@@ -68,7 +73,7 @@
 #nav>li>a{
     display: block;
     padding: 0 24px;
-    line-height: 46.5px;
+    line-height: 46px;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -100,24 +105,36 @@
 #nav .nav-arrow-down{
     font-size: 14px;
 }
+/* Search và menu icon */
 #header .search-btn:hover{
     background-color: #f44336;
     cursor: pointer;
 }
+#header .menu-btn:hover{
+    background-color: #ccc;
+}
+#header .menu-btn{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#header .menu-btn,
 #header .search-btn{
     float: right;
     padding: 0 21px;
 }
+#header .menu-icon,
 #header .search-icon{
     color: #fff;
     font-size: 20px;
-    line-height: 46.5px;
+    line-height: 46px;
 }
 
 /* Slider */
 #slider{
     position: relative;
-    margin-top: 46.5px;
+    margin-top: 46px;
     padding-top: 50%;
     background: url('../img/Combo3.jpg') top center / cover no-repeat;
 }
@@ -143,10 +160,14 @@
 }
 
 #content .content-section{
+    max-width: 100%;
+    /* Để chuyển qua Tablet thì cho max màn hình = 100% */
     width: 800px;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 #content .section-heading{
     font-weight: 500;
@@ -170,7 +191,7 @@
 }
 
 #content .school-list{
-    padding-top: 48px;
+    padding-top: 32px;
 }
 #content .school-item{
     float: left;
@@ -304,7 +325,37 @@
     background-color: #000;
     border: 1px solid #ccc;
 }
+/* Map */
+.map-section img{
+    width: 100%;
+}
 
+
+/* footer */
 #footer{
-
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .social-list{
+    font-size: 24px;
+}
+#footer .social-list a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+#footer .social-list a:hover{
+    color: rgba(0, 0, 0, 0.3)
+}
+#footer .copyright{
+    font-size: 15px;
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.8);
+}
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+#footer .copyright:hover,
+#footer .copyright a:hover{
+    color: rgba(0, 0, 0, 0.3);
 }
